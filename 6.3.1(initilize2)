@@ -1,0 +1,36 @@
+public class Cat
+{
+    private String name1 ;
+
+    public void initialize(String name) {
+        this.name1 = name;
+
+    }
+
+    private String name2 = null;
+
+    public void initialize(String name2, int weight, int age) {
+        this.name1 = name2 + weight +age;
+        age = 2;
+        weight = 5;
+    }
+    private String name3 = null;
+
+    public void initialize(String name3, int weight) {
+        this.name1 = name3 + weight;
+        weight = 5;
+    }
+    private String name4 = null;
+
+    public void initialize(String name4, String adres,int weight, int age,String colour ) {
+        this.name1 = name4 +adres + weight +age + colour;
+        weight = 6;
+        colour = "Синий";
+    }
+    public void initialize( String adres,int weight, int age,String colour ) {
+        this.name1 =  adres + weight + colour;
+        weight = 5;
+        colour = "Голубой";
+        adres = "Москва";
+    }
+}
