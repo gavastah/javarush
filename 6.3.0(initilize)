@@ -1,0 +1,20 @@
+public class Friend {
+    private String name1 =null;
+
+    public void initialize(String name) {
+        this.name1 = name;
+    }
+
+
+    private String name2 = null;
+
+    public void initialize(String name2, String age) {
+        this.name1 = name2 + age;
+    }
+    private String name3 = null;
+
+    public void initialize(String name2, String age, String sex) {
+        this.name1 = name2 + age + sex;
+    }
+
+    }
