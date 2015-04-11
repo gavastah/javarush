@@ -1,0 +1,21 @@
+public class Circle
+{
+    private int  name1 ;
+
+    public void initialize(int centerX, int centerY, int radius ) {
+        this.name1 = centerX + centerY+ radius;
+    }
+
+
+    private int name2;
+
+    public void initialize(int centerX, int centerY, int radius, int width) {
+        this.name1 = centerX + centerY+ radius+width;
+    }
+    private int  name3;
+
+    public void initialize(int centerX, int centerY, int radius, int width, int color) {
+        this.name1 = centerX + centerY+ radius + width + color;
+    }
+
+}
