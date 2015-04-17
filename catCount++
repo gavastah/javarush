@@ -1,0 +1,12 @@
+public class www {
+private static int catCount = 1;
+    String name;
+
+     public   www (String name){
+         this.name = name;
+
+
+         www.catCount++;
+    }
+
+}
