@@ -1,0 +1,22 @@
+public  class un1 {
+
+
+    public static void main(String[] args)throws Exception {
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введи свое имя ЧЕЛОВЕК");
+
+        String s = reader.readLine();
+        System.out.println("Введи любое число человек");
+        int a = Integer.parseInt(reader.readLine());
+
+        int b = a+1;
+        int c = a;
+        while (a-c < b-1) {
+
+            System.out.println(s);a++;
+        }
+
+
+    }
+}
