@@ -1,0 +1,25 @@
+public  class gh {
+
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        int a;
+        int sum = 0;
+        while (true) {
+
+            a = Integer.parseInt(reader.readLine());
+            sum += a;
+
+
+            System.out.println(sum);
+
+            if (a == (-1)) {
+                System.exit(0);
+            }
+
+
+            //Напишите тут ваш код
+        }
+    }
+
+}
