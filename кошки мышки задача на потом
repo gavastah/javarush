@@ -1,0 +1,64 @@
+public class Solution
+{
+    public static void main(String[] args) throws IOException
+    {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+
+        String grandfathe = reader.readLine();
+        Cat catgrandfathe = new Cat(grandfathe);
+
+        String grandmotherName = reader.readLine();
+        Cat catgrandMother = new Cat(grandmotherName);
+
+        String phaterName = reader.readLine();
+        Cat catphather = new Cat(phaterName);
+
+        String motherName = reader.readLine();
+        Cat catMother = new Cat(motherName);
+
+        String sunName = reader.readLine();
+        Cat catSun = new Cat(sunName, catMother);
+
+        String daughterName = reader.readLine();
+        Cat catDaughter = new Cat(daughterName, catMother);
+
+
+
+        System.out.println(catgrandfathe );
+        System.out.println(catgrandMother);
+        System.out.println("Cat name is " + phaterName +", no mother, " + "father is " + grandfathe);
+        System.out.println("Cat name is " + motherName + ", mother is " + grandmotherName +", no father");
+        System.out.println("Cat name is " + sunName + ", mother is " + motherName+ ", father is " + phaterName);
+        System.out.println("Cat name is "  + daughterName + ", mother is " + motherName+ ", father is " + phaterName);
+
+
+    }
+
+    public static class Cat
+    {
+        private String name;
+        private Cat parent;
+
+        Cat(String name)
+        {
+            this.name = name;
+        }
+
+        Cat(String name, Cat parent )
+        {
+            this.name = name;
+            this.parent = parent;
+
+        }
+
+        @Override
+        public String toString() {
+            if (parent == null)
+                return "Cat name is " + name + ", no mother" + ", no father";
+
+            return null;
+        }
+    }
+
+}
