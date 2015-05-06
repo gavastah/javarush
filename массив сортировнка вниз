@@ -1,0 +1,24 @@
+public static void main(String[] args) throws Exception {
+
+        Integer [] numbers = new Integer[10];
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        for (int i = 0; i < numbers.length; i++) {
+            String s = reader.readLine();
+            numbers[i] = Integer.parseInt(s);
+
+            Arrays.sort(numbers, Collections.<Integer>reverseOrder());
+
+
+            for ( i = 0; i < numbers.length; i++) {
+
+
+                System.out.println(numbers[i]);
+            }
+
+
+        }
+
+    }
+}
+
