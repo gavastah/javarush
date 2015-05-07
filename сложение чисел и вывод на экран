@@ -1,0 +1,26 @@
+public class Solution
+{
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
+
+
+        int sum = 0;
+        Boolean isExit = false;
+
+        while (!isExit) {
+
+
+            String s = buffer.readLine();
+            if (s.equals("сумма"))
+                break;
+
+            int b = Integer.parseInt(s);
+
+
+            sum = sum + b;
+
+        }
+        System.out.println(sum);
+    }
+}
