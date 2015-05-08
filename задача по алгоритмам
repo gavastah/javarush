@@ -1,0 +1,30 @@
+public class Solution
+{
+    public static void main(String[] args) throws Exception
+    {
+        BufferedReader ber = new BufferedReader(new InputStreamReader(System.in));
+        int maximum;
+        int max;
+        int i = 0;
+        while (i <= 0)
+        {
+
+            i =  Integer.parseInt(ber.readLine());
+
+
+        }
+
+        max = Integer.parseInt(ber.readLine());
+        maximum = max;
+        for (int a = 1; a<i; a++)
+        {
+            max = Integer.parseInt(ber.readLine());
+            if (max > maximum)
+                maximum = max;
+        }
+
+
+
+        System.out.println(maximum);
+    }
+}
